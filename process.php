@@ -53,7 +53,7 @@ setlocale(LC_TIME, 'fr_FR.UTF-8');
 $date = strftime("%d %B %Y");
 
 // Prepare email
-$to = 'adelim0555@gmail.com';
+$to = 'commercial@central-tic.dz';
 $email_subject = "Nouvelle demande de service - $sujet";
 
 // HTML email template
