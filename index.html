@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
     <!-- SEO Meta Tags -->
-    <title>Central TIC - Développement Web, Maintenance & Vente de Matériel Informatique à Alger</title>
-    <meta name="description" content="Central TIC à Rouiba: Maintenance informatique professionnelle, développement web/mobile, et vente en détail de matériel informatique. Devis gratuit 24h/24, stock disponible immédiat !">
-    <meta name="keywords" content="vente matériel informatique Alger, boutique informatique Rouiba, achat PC Alger, accessoires ordinateur Alger, développement web Algérie, maintenance informatique Alger, réparation ordinateur Alger, fournitures informatiques Alger">
+    <title>Central TIC - Vente Matériel, Maintenance & Développement à Alger</title>
+    <meta name="description"
+        content="Experts en maintenance PC, vente matériel & développement web/mobile à Alger. Service express 24/7, dépannage rapide, devis en 1h !">
+    <meta name="keywords"
+        content="vente matériel informatique entreprise Alger, fournisseur matériel informatique Rouiba, équipement informatique B2B Alger, achat matériel informatique professionnel Algérie, développement logiciel sur mesure Alger, création sites web entreprises Algérie, maintenance informatique entreprise Rouiba, dépannage informatique B2B Alger, solutions IT professionnelles Algérie, intégration systèmes informatiques Alger">
     <meta name="author" content="Central TIC">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="geo.region" content="DZ-16">
     <meta name="geo.placename" content="Rouiba, Alger">
     <meta name="geo.position" content="36.7538;3.2812">
+    <meta name="DC.title" content="Services informatiques Alger">
     <meta name="ICBM" content="36.7538, 3.2812">
     <link rel="canonical" href="https://central-tic.dz/">
 
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Central TIC - Développement Web & Maintenance Informatique à Alger">
-    <meta property="og:description" content="Experts en dépannage PC, création de sites web et applications mobiles à Alger. Assistance rapide et efficace 24/7.">
+    <meta property="og:description"
+        content="Experts en dépannage PC, création de sites web et applications mobiles à Alger. Assistance rapide et efficace 24/7.">
     <meta property="og:image" content="https://central-tic.dz/images/banner.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -28,18 +33,23 @@
     <meta property="og:site_name" content="Central TIC">
     <meta property="og:locale" content="fr_FR">
 
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="form.js" as="script">
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@CentralTIC">
     <meta name="twitter:title" content="Central TIC - Experts en Développement Web & Maintenance Informatique à Alger">
-    <meta name="twitter:description" content="Dépannage PC, création de sites web et applications mobiles à Alger. Service rapide et efficace 24/7.">
+    <meta name="twitter:description"
+        content="Dépannage PC, création de sites web et applications mobiles à Alger. Service rapide et efficace 24/7.">
     <meta name="twitter:image" content="https://central-tic.dz/images/banner.jpg">
     <meta name="twitter:image:alt" content="Central TIC - Informatique et Web">
 
     <!-- Performance Boost: Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
+
+
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any"> <!-- Changed path to root -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=2"> <!-- Added version -->
@@ -90,19 +100,27 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar animate-fade-down">
+        <nav class="navbar animate-fade-down" aria-label="Menu principal">
             <div class="container">
                 <div class="logo">
-                    <img src="images/logo_tic.png" alt="Central TIC Logo" class="animate-bounce">
+                    <!-- 🔴 Added width/height for logo 🔴 -->
+                    <img src="images/logo_tic.png" alt="Central TIC - Société informatique à Rouiba Alger"
+                         loading="lazy" width="200" height="60">
                 </div>
-                <div class="contact-info-header">
-                    <a href="tel:+213550541006" class="phone-link animate-pulse">
+                <!-- 🔴 Added schema markup for phone 🔴 -->
+                <div class="contact-info-header" itemscope itemtype="http://schema.org/LocalBusiness">
+                    <a href="tel:+213550541006" class="phone-link animate-pulse" itemprop="telephone">
                         <i class="fas fa-phone-alt"></i>
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <meta itemprop="addressLocality" content="Rouiba">
+                            <meta itemprop="addressRegion" content="Alger">
+                        </span>
                         0550541006
                     </a>
                 </div>
@@ -110,39 +128,43 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-labelledby="mainHeading">
         <div class="container">
             <div class="hero-content">
-                <h1>BESOIN D'UN EXPERT EN INFORMATIQUE ?</h1>
-                <p class="subtitle animate-fade-up">Votre partenaire technologique de confiance pour tous vos besoins informatiques</p>
-                <a href="#contact" class="cta-button animate-bounce">Obtenir un devis gratuit</a>
+                <h1 id="mainHeading">Matériel Informatique, Maintenance & Développement à Alger</h1>
+                <!-- 🔥 Optimized subtitle with your core services 🔥 -->
+                <p class="subtitle animate-fade-up">Fournisseur de matériel informatique pour entreprises à Alger : Solutions IT sur mesure, maintenance et développement logiciel.</p>
+                <a href="#contact" class="cta-button animate-bounce">Obtenez Votre Devis Gratuit</a>
             </div>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-shapes">
+        <!-- 🔥 Decorative elements for branding 🔥 -->
+        <div class="hero-overlay" role="img" aria-hidden="true"></div>
+        <div class="hero-shapes" aria-hidden="true">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
         </div>
     </section>
+    
 
-    <section class="features">
+    <section class="features" itemscope itemtype="http://schema.org/Service">
         <div class="container">
+            <h2 class="visually-hidden section-title1">Nos Points Forts </h2>
             <div class="features-grid">
-                <div class="feature-item animate-slide-up">
+                <div class="feature-item animate-slide-up" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Solutions Fiables</h3>
-                    <p>Sécurité et performance garanties</p>
+                    <h3 itemprop="name">Solutions Sécurisées</h3>
+                    <p itemprop="description">Protection des données et systèmes pour entreprises Alger</p>
                 </div>
-                <div class="feature-item animate-slide-up" style="animation-delay: 0.2s;">
+                <div class="feature-item animate-slide-up" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" style="animation-delay: 0.2s;">
                     <i class="fas fa-clock"></i>
-                    <h3>Disponibilité Rapide</h3>
-                    <p>Service d'urgence 24/7</p>
+                    <h3 itemprop="name">Disponibilité Rapide</h3>
+                    <p itemprop="description">Service d'urgence 24/7</p>
                 </div>
-                <div class="feature-item animate-slide-up" style="animation-delay: 0.4s;">
+                <div class="feature-item animate-slide-up"  itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog" style="animation-delay: 0.4s;">
                     <i class="fas fa-star"></i>
-                    <h3>Tarifs Compétitifs</h3>
-                    <p>Solutions adaptées à votre budget</p>
+                    <h3 itemprop="name">Tarifs Compétitifs</h3>
+                    <p itemprop="description">Solutions adaptées à votre budget</p>
                 </div>
             </div>
         </div>
@@ -160,6 +182,7 @@
                     <ul>
                         <li class="animate-slide-right">Réparation et entretien de matériel</li>
                         <li class="animate-slide-right">Installation et configuration de logiciels</li>
+                        <li class="animate-slide-right">Assistance technique 24h/24<span class="visually-hidden"> à Alger et sa région</span></li>
                         <li class="animate-slide-right">Dépannage et résolution de problèmes</li>
                         <li class="animate-slide-right">Sécurisation et optimisation de système</li>
                         <li class="animate-slide-right">Conseils personnalisés pour vos projets</li>
@@ -194,6 +217,10 @@
             </div>
         </div>
     </section>
+
+    <div class="local-areas" aria-hidden="true" style="display:none;">
+        <p>Nous intervenons dans tout Alger : Rouiba, Bab Ezzouar, El Harrach et Alger Centre</p>
+    </div>
 
     <section class="why-us">
         <div class="container">
@@ -245,25 +272,25 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" itemscope itemtype="http://schema.org/LocalBusiness">
         <div class="container">
             <h2 class="section-title animate-fade-up">Contactez-nous</h2>
             <p class="section-subtitle animate-fade-up">Contactez-moi dès aujourd'hui pour obtenir un devis gratuit</p>
-            
+
             <div class="contact-grid">
                 <div class="contact-info animate-slide-up">
                     <div class="info-card">
-                        <div class="info-item animate-fade-right">
-    <i class="fas fa-phone-alt"></i>
-    <div>
-        <h4>Téléphone</h4>
-        <ul class="phone-list">
-            <li>+213 <span>0550 54 10 06</span></li>
-            <li>+213 <span>0782 68 46 01</span></li>
-            <li>+213 <span>0662 58 07 39</span></li>
-        </ul>
-    </div>
-</div>
+                        <div class="info-item animate-fade-right"  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <ul class="phone-list">
+                                    <li>+213 <span>0550 54 10 06</span></li>
+                                    <li>+213 <span>0782 68 46 01</span></li>
+                                    <li>+213 <span>0662 58 07 39</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div class="info-item animate-fade-right" style="animation-delay: 0.2s;">
                             <i class="fas fa-map-marker-alt"></i>
@@ -273,26 +300,29 @@
                             </div>
                         </div>
                         <div class="info-item animate-fade-right" style="animation-delay: 0.4s;">
-              <i class="fas fa-clock"></i>
-    <div>
-        <h4>Horaires</h4>
-        <p>Samedi - Jeudi : 9h00 - 18h00</p>
-        <p><strong>Disponibles pour répondre aux appels 24h/24.</strong></p>
-    </div>
-</div>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Samedi - Jeudi : 9h00 - 18h00</p>
+                                <p><strong>Disponibles pour répondre aux appels 24h/24.</strong></p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
 
                 <form class="contact-form animate-slide-up" id="contactForm" action="process.php" method="POST">
                     <div class="form-group">
-                        <input type="text" id="nom" name="nom" required placeholder="Nom complet" class="animate-fade-up">
+                        <input type="text" id="nom" name="nom" required placeholder="Nom complet"
+                            class="animate-fade-up">
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Votre Email" class="animate-fade-up">
+                        <input type="email" id="email" name="email" required placeholder="Votre Email"
+                            class="animate-fade-up">
                     </div>
                     <div class="form-group">
-                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" class="animate-fade-up">
+                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"
+                            class="animate-fade-up">
                     </div>
                     <div class="form-group">
                         <select id="sujet" name="sujet" required class="animate-fade-up">
@@ -306,7 +336,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" required placeholder="Votre message" class="animate-fade-up"></textarea>
+                        <textarea id="message" name="message" required placeholder="Votre message"
+                            class="animate-fade-up"></textarea>
                     </div>
                     <button type="submit" class="submit-btn animate-fade-up">
                         <span class="btn-text">Envoyer</span>
@@ -323,22 +354,27 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo animate-fade-up">
-                    <img src="images/logo_tic.png" alt="Central TIC Logo">
+                <div class="footer-logo">
+                    <img src="images/logo_tic.png" 
+                         alt="Central TIC - Expert informatique Alger" 
+                         loading="lazy"
+                         width="150"
+                         height="45">
                 </div>
-                <div class="footer-links animate-fade-up">
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social animate-fade-up">
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <div class="footer-links">
+                    <!-- 🔴 Added keyword-rich anchor text 🔴 -->
+                    <a href="#services">Maintenance Informatique Alger</a>
+                    <a href="#contact">Contact Urgent</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="animate-fade-up">&copy; 2025 Central TIC. Tous droits réservés.</p>
+                <!-- 🔴 Added local service areas 🔴 -->
+                <p>Service technique à Alger : Rouiba, Bab Ezzouar, El Harrach, Hussein Dey</p>
             </div>
         </div>
     </footer>
 </body>
+
+
+
 </html>

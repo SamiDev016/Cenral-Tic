@@ -912,3 +912,10 @@ footer .container {
 .fa-spin {
     animation: spin 1s linear infinite;
 }
+
+.section-title1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
