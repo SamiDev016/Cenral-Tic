@@ -114,7 +114,7 @@
                          loading="lazy" width="200" height="60">
                 </div>
                 <!-- 🔴 Added schema markup for phone 🔴 -->
-                <div class="contact-info-header" itemscope itemtype="http://schema.org/LocalBusiness">
+                <!-- <div class="contact-info-header" itemscope itemtype="http://schema.org/LocalBusiness">
                     <a href="tel:+213550541006" class="phone-link animate-pulse" itemprop="telephone">
                         <i class="fas fa-phone-alt"></i>
                         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -123,6 +123,11 @@
                         </span>
                         0550541006
                     </a>
+                </div> -->
+                <div class="nav-links">
+                    <a href="index.html" aria-current="page">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="contact.html" class="contact-link">Contact</a>
                 </div>
             </div>
         </nav>
@@ -134,7 +139,7 @@
                 <h1 id="mainHeading">Matériel Informatique, Maintenance & Développement à Alger</h1>
                 <!-- 🔥 Optimized subtitle with your core services 🔥 -->
                 <p class="subtitle animate-fade-up">Fournisseur de matériel informatique pour entreprises à Alger : Solutions IT sur mesure, maintenance et développement logiciel.</p>
-                <a href="#contact" class="cta-button animate-bounce">Obtenez Votre Devis Gratuit</a>
+                <a href="contact.html" class="cta-button animate-bounce">Obtenez Votre Devis Gratuit</a>
             </div>
         </div>
         <!-- 🔥 Decorative elements for branding 🔥 -->
@@ -272,105 +277,30 @@
         </div>
     </section>
 
-    <section class="contact" id="contact" itemscope itemtype="http://schema.org/LocalBusiness">
-        <div class="container">
-            <h2 class="section-title animate-fade-up">Contactez-nous</h2>
-            <p class="section-subtitle animate-fade-up">Contactez-moi dès aujourd'hui pour obtenir un devis gratuit</p>
-
-            <div class="contact-grid">
-                <div class="contact-info animate-slide-up">
-                    <div class="info-card">
-                        <div class="info-item animate-fade-right"  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <ul class="phone-list">
-                                    <li>+213 <span>0550 54 10 06</span></li>
-                                    <li>+213 <span>0782 68 46 01</span></li>
-                                    <li>+213 <span>0662 58 07 39</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="info-item animate-fade-right" style="animation-delay: 0.2s;">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Adresse</h4>
-                                <p>Rouiba, Alger</p>
-                            </div>
-                        </div>
-                        <div class="info-item animate-fade-right" style="animation-delay: 0.4s;">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Horaires</h4>
-                                <p>Samedi - Jeudi : 9h00 - 18h00</p>
-                                <p><strong>Disponibles pour répondre aux appels 24h/24.</strong></p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <form class="contact-form animate-slide-up" id="contactForm" action="process.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="nom" name="nom" required placeholder="Nom complet"
-                            class="animate-fade-up">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Votre Email"
-                            class="animate-fade-up">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone"
-                            class="animate-fade-up">
-                    </div>
-                    <div class="form-group">
-                        <select id="sujet" name="sujet" required class="animate-fade-up">
-                            <option value="">Sélectionnez un service</option>
-                            <option value="Maintenance Informatique">Maintenance Informatique</option>
-                            <option value="Développement Web">Développement Web</option>
-                            <option value="Solutions Cloud">Solutions Cloud & SaaS</option>
-                            <option value="Sécurité Informatique">Sécurité Informatique</option>
-                            <option value="Consultation">Consultation & Conseil</option>
-                            <option value="Support Technique">Support Technique</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" required placeholder="Votre message"
-                            class="animate-fade-up"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn animate-fade-up">
-                        <span class="btn-text">Envoyer</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                    <div id="formMessage" class="form-message"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <script src="form.js"></script>
-
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo_tic.png" 
-                         alt="Central TIC - Expert informatique Alger" 
-                         loading="lazy"
-                         width="150"
-                         height="45">
+                    <img src="images/logo_tic.png" alt="Central TIC Logo" width="150" height="45">
                 </div>
                 <div class="footer-links">
-                    <!-- 🔴 Added keyword-rich anchor text 🔴 -->
-                    <a href="#services">Maintenance Informatique Alger</a>
-                    <a href="#contact">Contact Urgent</a>
+                    <a href="index.html" aria-current="page">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="contact.html">Contact</a>
                 </div>
+                <!-- <div class="social-links">
+                    <a href="https://www.facebook.com/CentralTIC" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/central-tic" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/central_tic" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div> -->
             </div>
-            <div class="footer-bottom">
-                <!-- 🔴 Added local service areas 🔴 -->
-                <p>Service technique à Alger : Rouiba, Bab Ezzouar, El Harrach, Hussein Dey</p>
-            </div>
+            <p class="copyright">&copy; 2025 Central TIC. Tous droits réservés.</p>
         </div>
     </footer>
 </body>

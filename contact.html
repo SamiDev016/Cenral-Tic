@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Contactez Central TIC - Service Client & Support à Alger</title>
+    <meta name="description"
+        content="Contactez Central TIC pour vos besoins en informatique à Alger. Service client disponible 24/7, devis gratuit en 1h !">
+    <meta name="keywords"
+        content="contact Central TIC, devis informatique Alger, support technique Rouiba, assistance informatique Alger">
+    <meta name="author" content="Central TIC">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="DZ-16">
+    <meta name="geo.placename" content="Rouiba, Alger">
+    <meta name="geo.position" content="36.7538;3.2812">
+    <link rel="canonical" href="https://central-tic.dz/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact - Central TIC Alger">
+    <meta property="og:description" content="Contactez notre équipe pour tous vos besoins en informatique à Alger">
+    <meta property="og:url" content="https://central-tic.dz/contact.html">
+    
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="form.js" as="script">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Central TIC",
+        "image": "https://central-tic.dz/images/banner.jpg",
+        "description": "Service client et support technique Central TIC à Alger",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rouiba",
+          "addressLocality": "Alger",
+          "addressRegion": "Alger",
+          "postalCode": "16017",
+          "addressCountry": "DZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "36.7538",
+          "longitude": "3.2812"
+        },
+        "url": "https://central-tic.dz/contact.html",
+        "email": "commercial@central-tic.dz",
+        "telephone": "+213550541006",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar animate-fade-down" aria-label="Menu principal">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo_tic.png" alt="Central TIC - Société informatique à Rouiba Alger"
+                             loading="lazy" width="200" height="60">
+                    </a>
+                </div>
+                <div class="contact-info-header" itemscope itemtype="http://schema.org/LocalBusiness">
+                    <a href="tel:+213550541006" class="phone-link animate-pulse" itemprop="telephone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>0550541006</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contactez Central TIC</h1>
+            <p class="subtitle">Notre équipe est à votre service</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+213550541006">0550541006</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:commercial@central-tic.dz">commercial@central-tic.dz</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>Rouiba, Alger</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact" itemscope itemtype="http://schema.org/LocalBusiness">
+        <div class="container">
+            <h2 class="section-title">Envoyez-nous un message</h2>
+            <form id="contactForm" action="process.php" method="POST" class="animate-fade-up">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo_tic.png" alt="Central TIC Logo" width="150" height="45">
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </div>
+                <!-- <div class="social-links">
+                    <a href="https://www.facebook.com/CentralTIC" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/central-tic" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/central_tic" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div> -->
+            </div>
+            <p class="copyright">&copy; 2025 Central TIC. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="form.js" defer></script>
+</body>
+</html>
